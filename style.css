@@ -22,7 +22,7 @@ body {
     padding: 5px;
 }
 
-ul.navlinks, #footer ul {
+ul.navlinks {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -30,7 +30,7 @@ ul.navlinks, #footer ul {
     overflow: hidden;
 }
 
-ul.navlinks li a, #footer li a {
+ul.navlinks li a {
     float: left;
     display: block;
     padding: 10px;
@@ -49,6 +49,25 @@ ul.navlinks li a:hover, #footer a:hover {
     top: 10px;
     width: 101%;
     text-align: center;
+    display: flex;
+    font-size: 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+#footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer #contact {
+    width: 40vw;
+}
+
+#footer #resources {
+    width: 40vw;
 }
 
 .sections {
