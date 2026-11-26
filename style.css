@@ -16,6 +16,7 @@ body {
     bottom: 7px;
     right: 7px;
     width: 101%;
+    color: white;
 }
 
 .icon {
@@ -35,7 +36,7 @@ ul.navlinks li a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ul.navlinks li a:hover, #footer a:hover {
@@ -51,6 +52,7 @@ ul.navlinks li a:hover, #footer a:hover {
     text-align: center;
     display: flex;
     font-size: 10px;
+    color: white;
 }
 
 #footer ul {
@@ -59,7 +61,7 @@ ul.navlinks li a:hover, #footer a:hover {
 
 #footer li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #footer #contact {
