@@ -1,8 +1,28 @@
-/*all colours must be ok for colourblindness and/or have more accessible options clearly available*/
+/*!all colours must be ok for colourblindness and/or have more accessible options clearly available!*/
+:root {
+    --primary-bg: rgb(236, 244, 236);
+    --seconday-bg: rgb(78, 135, 78);
+    --hover-bg: green;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    background-color: var(--hover-bg);
+}
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(236, 244, 236);
+    background-color: var(--primary-bg);
     
     display: flex;
     flex-direction: column;
@@ -10,7 +30,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(67, 130, 67);
+    background-color: var(--seconday-bg);
     display: flex;
     position: relative;
     bottom: 7px;
@@ -34,12 +54,8 @@ ul.navlinks li a {
     color: black;
 }
 
-ul.navlinks li a:hover, #footer a:hover {
-    background-color: green;
-}
-
 #footer {
-    background-color: rgb(67, 130, 67);
+    background-color: var(--seconday-bg);
     position: relative;
     right: 7px;
     top: 10px;
@@ -47,16 +63,6 @@ ul.navlinks li a:hover, #footer a:hover {
     text-align: center;
     display: flex;
     font-size: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding-inline-start: 0px;
-}
-
-li a {
-    text-decoration: none;
-    color: black;
 }
 
 #footer #contact {
@@ -86,7 +92,7 @@ li a {
 }
 
 #about-me #profile-pic {
-    background-color: green;
+    background-color: var(--hover-bg);
     width: 10%;
 }
 
@@ -95,13 +101,13 @@ li a {
 }
 
 #about-me #contact {
-    background-color: green;
+    background-color: var(--hover-bg);
     width: 15%;
     padding: 5px;
 }
 
 #about-me ul {
-    background-color: rgb(67, 130, 67);
+    background-color: var(--seconday-bg);
     padding: 15px;
     border-radius: 5%;
 }
